@@ -32,80 +32,119 @@
     </header>
 
     <main>
-        <section class="bannSection">
-            <div class="bannBlock">
+        <section class="navLkSection">
+            <div class="navLkBlock container">
                 <nav>
-                    <ul>
-                        <li><a href="#">Меню</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Оплата</a></li>
-                        <li><a class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#newOrderModal">Бронь столика</a></li>
-                    </ul>                    
+                    <a href="#">Личный кабинет</a>
+                    <a href="#" class="lk">
+                        <div class="icon">
+                            <img src="img/lk.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="cart">
+                        <div class="icon">
+                            <img src="img/cart.svg" alt="">
+                        </div>
+                    </a>
                 </nav>
-                <div class="text">Видовой ресторан Food Exxe Relo на Крестовском острове</div>
             </div>
         </section>
-        <section class="aboutSection">
-            <div class="aboutBlock container">
-                <div class="title__block">О ресторане</div>
-                <div class="info-block">
-                    <div class="item">
-                        <div class="title__name">Food Exxe Relo</div>
-                    </div>
-                    <div class="item">
-                        <div class="text">
-                            <p>Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum.</p>
-                            <p>Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. In adipiscing tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.</p>
-                        </div>
-                    </div>
+        <section class="menuListSection">
+            <div class="menuListBlock container">
+                <div class="category">
+                    <ul>
+                        <li>Завтраки</li>
+                        <li>Raw</li>
+                        <li>Холодные закуски</li>
+                        <li>Брускетты</li>
+                        <li>К вину</li>
+                        <li>Салаты</li>
+                        <li>Супы</li>
+                        <li>Паста и ризотто</li>
+                        <li>Мясо</li>
+                        <li>Рыба</li>
+                        <li>Grill</li>
+                        <li>Мангал</li>
+                        <li>Гарниры</li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="menuSection">
-            <div class="menuBlock container">
-                <div class="title__block">Меню</div>
-                <div class="info-block">
-                    <div class="item">
-                        <div class="title__name">Меню</div>
-                    </div>
-                    <div class="item">
-                        <div class="text">
-                            <p>At faucibus nullam mauris vitae ut non. Augue libero non nibh nec, et eget erat. Nascetur nunc neque, varius massa aliquam interdum turpis massa. Ac tortor aliquam risus, interdum nisl mauris sit. Ut placerat fermentum pellentesque ac at. Vitae venenatis faucibus urna mi eget vitae quam eu. Euismod sed mauris id turpis iaculis. Erat rutrum dolor, vitae morbi.</p>
-                            <p>Nunc cras cras aliquet blandit faucibus massa sagittis semper.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-list">
-                    <div class="item">
+                <div class="product">
+                    <div class="gallery">
                         <div class="img">
-                            <img src="img/86b0b3a81528aa1555b429c4d69838df.jpeg" alt="">
+                            <img src="img/57d43fb50fb93bbeca8821824246abcb.png" alt="">
                         </div>
-                        <div class="title__block">Основное меню</div>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="img/7841478d7c85f3339261999a7d6b7ba1.jpeg" alt="">
+                        <div class="swiper gallerySlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="img/57d43fb50fb93bbeca8821824246abcb.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="img/b96a75a5ca0cb16f30f4775b491e2fb4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="img/f551153ef673efd803b4e19591f92b73.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img">
+                                        <img src="img/d7ae11ab343abcd80c5a5ecdfee7be25.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                        <div class="title__block">Барная карта</div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="deliverySection">
-            <div class="deliveryBlock container">
-                <div class="title__block">Доставка</div>
-                <div class="info-block">
-                    <div class="item">
-                        <div class="title__name">Служба доставки</div>
-                    </div>
-                    <div class="item">
-                        <div class="text">
-                            <p>Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In lectus phasellus non ornare eget velit. Facilisi urna, tristique dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo pulvinar sit volutpat nulla vestibulum.</p>
-                            <p>Morbi pellentesque enim massa laoreet vel id. Lectus ac, facilisis neque turpis. Morbi massa enim nullam sem vehicula. Amet quis pellentesque enim porttitor lectus interdum. Nisi, faucibus pharetra at porttitor. Fringilla luctus pretium in viverra. In adipiscing tempor amet malesuada ullamcorper ut sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.</p>
+                    <div class="information">
+                        <div class="name">Яичница-глазунья из трех яиц</div>
+                        <div class="cost">
+                            <span>250 ₽</span>
+                            <span>/ 400 грамм</span>
                         </div>
-                        <div class="btn-block">
-                            <a href="#" class="btn btn-accent">Подробнее</a>
-                            <a href="#" class="btn btn-borderGray">Условия доставки</a>
+                        <div class="quantity">
+                            <span>Количество порций:</span>
+                            <div class="inCart">
+                                <input type="number" min="1" value="1">
+                                <div class="btn btn-accent">В корзину</div>
+                            </div>
+                        </div>
+                        <div class="additionally">
+                            <span>Сделать еще вкуснее</span>
+                            <div class="functions">
+                                <label class="item">
+                                    <div class="info">
+                                        <div class="name">Тигровые креветки 60 г</div>
+                                        <div class="price">450 ₽</div>
+                                    </div>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="item">
+                                    <div class="info">
+                                        <div class="name">Тигровые креветки 60 г</div>
+                                        <div class="price">450 ₽</div>
+                                    </div>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="item">
+                                    <div class="info">
+                                        <div class="name">Тигровые креветки 60 г</div>
+                                        <div class="price">450 ₽</div>
+                                    </div>
+                                    <input type="checkbox">
+                                </label>
+                                <label class="item">
+                                    <div class="info">
+                                        <div class="name">Тигровые креветки 60 г</div>
+                                        <div class="price">450 ₽</div>
+                                    </div>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,29 +226,6 @@
             </div>
         </div>
     </footer>
-
-    <div class="modal fade" id="newOrderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">
-                <div class="logo">
-                    <img src="img/logo.svg" alt="">
-                </div>
-                <span>Забронировать столик</span>
-                <form action="">
-                    <input type="text" placeholder="Имя">
-                    <input type="phone" placeholder="Телефон">
-                    <div class="desc">
-                        <input type="number" placeholder="Гостей">
-                        <input type="time" placeholder="Время">
-                    </div>
-                    <button type="submit" class="btn btn-accent">Забронировать</button>
-                </form>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-          </div>
-        </div>
-    </div>
     
 
 
