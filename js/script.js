@@ -17,5 +17,31 @@ $('.menuListSection .menuListBlock .product .gallery .swiper .img img').on('clic
     linkMainPhoto.attr('src', link)
 })
 
+$.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+$(".mask-phone").mask("+7 (h99) 999-99-99");
 
+$('header .burger').on('click', function() {
+    $('.menu-open').addClass('active')
+    $('body').css({'overflow': 'hidden'})
+})
+$('.menu-open .logo-close .btn-close').on('click', function() {
+    $('.menu-open').removeClass('active')
+    $('body').css({'overflow': 'auto'})
+})
+
+$(document).ready(function () {
+    headerTop()
+})
+
+$(window).resize(function() {
+    headerTop()
+})
+
+function headerTop() {
+    let h = 0
+    $('body').width()>759 ? h=0 : h=$('header').height()
+    $('main').css({
+        'margin-top': `${h}px`
+    })
+}
 
