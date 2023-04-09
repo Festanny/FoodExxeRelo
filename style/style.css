@@ -532,7 +532,22 @@ footer .footer .info-block span:nth-of-type(2) {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 10px;
+}
+.menuListSection .menuListBlock .category ul li a {
+  position: relative;
+}
+.menuListSection .menuListBlock .category ul li a.active::before,
+.menuListSection .menuListBlock .category ul li a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #B59571;
 }
 .menuListSection .menuListBlock .product {
   margin: 0 200px;
@@ -639,8 +654,43 @@ footer .footer .info-block span:nth-of-type(2) {
 }
 .menuListSection .menuListBlock .info-block.listProduct {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(270px, auto));
   gap: 25px;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .img {
+  width: 100%;
+  height: 220px;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .name-price {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 25px;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .name-price .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .name-price .price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .name-price .price-cart .price {
+  font-size: 32px;
+  font-weight: bold;
+}
+.menuListSection .menuListBlock .info-block.listProduct .item .name-price .price-cart .btn {
+  padding: 10px 20px;
 }
 
 .swiper .swiper-wrapper {

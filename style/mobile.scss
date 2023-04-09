@@ -2,6 +2,9 @@
     .bannSection .bannBlock .text {
         width: 100%;
     }
+    .menuListSection .menuListBlock .product {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 1399px) {
     .title__name {
@@ -12,6 +15,9 @@
     }
     .menu-open .info-block .item.list ul {
         gap: 30px;
+    }
+    .menuListSection .menuListBlock .product {
+        gap: 50px;
     }
 }
 @media screen and (max-width: 1209px) {
@@ -37,6 +43,10 @@
     }
 }
 @media screen and (max-width: 949px) {
+    .menuListSection .menuListBlock .product {
+        display: flex;
+        flex-direction: column;
+    }
     main {
         padding-left: 100px;
     }
@@ -175,6 +185,9 @@
     }
     .btn {
         font-size: 18px;
+    }
+    .menuListSection .menuListBlock .product .gallery .swiper .swiper-wrapper .img {
+        height: 60px;
     }
 }
 @media screen and (max-width: 320px) {
